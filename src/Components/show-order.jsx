@@ -1,6 +1,4 @@
 import { useRef, useEffect } from "react";
-// import { Modal } from "./modal";
-// import { useModals } from "../useModal";
 import Modal from "./Modal";
 import { Link } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
@@ -13,7 +11,7 @@ const ShowOrderModal = (props) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       playerRef.current.pause();
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [toggle]);

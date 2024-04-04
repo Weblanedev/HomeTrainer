@@ -13,7 +13,6 @@ const ContactUs = () => {
   });
   const [ok, setOk] = useState(false);
 
-  // Check if all form fields are filled
   const isFormFilled =
     formData.firstName &&
     formData.lastName &&
