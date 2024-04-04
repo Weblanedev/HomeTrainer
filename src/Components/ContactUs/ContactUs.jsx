@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ContactUs.css";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
-import ContactPopUp from "./contactPopUp";
+import ContactPopUp from "./ContactPopUp";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -50,25 +50,6 @@ const ContactUs = () => {
             <h1 className="hero__overlay--text">Contact Us</h1>
           </div>
         </div>
-        {/* <div className="contact__info">
-          <div className="our__address">
-            <h1 className="address__title">ADDRESS</h1>
-            <p className="address__content">
-              Weesperbuurt en Plantage, <br />
-              Amsterdam, Netherlands
-            </p>
-          </div>
-          <div className="other__info">
-            <div className="other__info--content">
-              <h1 className="address__title">PHONE</h1>
-              <p className="address__content">1-677-124-44227</p>
-            </div>
-            <div className="other__info--content">
-              <h1 className="address__title">EMAIL</h1>
-              <p className="address__content">prowess@qodeinteractive.com</p>
-            </div>
-          </div>
-        </div> */}
         <div className="contactUs__small--content">
           <p className="small__content--text">
             We're here to help! Whether you have a question, feedback, or need
