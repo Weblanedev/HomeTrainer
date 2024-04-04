@@ -1,0 +1,51 @@
+.aboutUs__page {
+  width: 100%;
+  height: max-content;
+  margin-top: 68px;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutUs__hero--page {
+  height: 60vh;
+  width: 100%;
+  /* background-image: url("https://prowess.qodeinteractive.com/wp-content/uploads/2018/03/about-us-title-img-1.jpg"); */
+  background-image: url("https://prowess.qodeinteractive.com/wp-content/uploads/2018/02/h3-parallax-1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs__hero--text {
+  color: #fff;
+  font-family: poppins;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.aboutUs__hero--text1{
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.about__cardImage{
+  height: 50vh;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutUs__hero--text{
+    font-size: 40px;
+    line-height: 2;
+  }
+}

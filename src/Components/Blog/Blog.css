@@ -1,0 +1,200 @@
+.blog__container {
+  width: 100%;
+  height: max-content;
+  font-family: poppins;
+}
+
+.HeroPage__container {
+  height: 70vh;
+  width: 100%;
+  margin-top: 68px;
+  background-image: url("https://prowess.qodeinteractive.com/wp-content/uploads/2018/02/blog-standard-list-title-img.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 70px;
+  font-family: Roboto;
+}
+
+.hero__text {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  /* text-align: center; */
+  line-height: 65px;
+  margin: 0px 0px 0px 150px;
+}
+
+.hero__btn {
+  height: 70px;
+  /* width: 1px; */
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  background-color: #f14f4a;
+  color: #fff;
+  font-weight: 900;
+  padding: 12px 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.hero__btn:hover {
+  background-color: #b4cf5c;
+}
+
+.blog__post--container {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog__post--wrapper {
+  width: 90%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #000; */
+}
+
+.blog__post--content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 100px;
+}
+
+.blog__post--pictureContent {
+  width: 80%;
+  height: 70vh;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.blog__post--pictureContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog__post--textContent {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 40px;
+}
+
+.blog__post--section {
+  width: max-content;
+  text-transform: uppercase;
+  line-height: 27px;
+  color: rgb(156, 156, 156);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.blog__post--section:hover {
+  color: rgb(243, 78, 58);
+}
+
+.blog__post--heading {
+  width: 100%;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.blog__post--heading:hover {
+  color: rgb(243, 78, 58);
+}
+
+.blog__post--writeUp {
+  width: 80%;
+  font-size: 16px;
+  line-height: 27px;
+  color: rgb(156, 156, 156);
+  font-weight: 300;
+}
+
+.blog__post--hr {
+  background-color: rgb(201, 201, 201);
+  border: none;
+  margin: 50px 0px;
+  height: 1px;
+}
+
+.blog__post--prompt {
+  width: 80%;
+  height: 150px;
+  align-self: flex-start;
+  background-color: #29282d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://plus.unsplash.com/premium_photo-1685794901473-8d24344d9ab6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+}
+
+.blogPost__text {
+    width: 90%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+
+@media screen and (max-width: 700px) {
+  .HeroPage__container {
+    height: 50vh;
+    margin-top: 68px;
+    justify-content: center;
+    background-position: right;
+  }
+  .hero__text {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0px;
+  }
+
+  .blog__post--pictureContent {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .blog__post--pictureContent img {
+    object-position: left;
+  }
+
+  .blog__post--heading {
+    line-height: 1.4;
+  }
+
+  .blog__post--writeUp {
+    width: 100%;
+    word-break: break-all;
+    margin-top: 10px;
+  }
+
+  .blog__post--prompt{
+    width: 100%;
+  }
+
+  .blogPost__text{
+    font-size: 17px;
+  }
+}

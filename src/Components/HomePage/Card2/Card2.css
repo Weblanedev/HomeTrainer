@@ -1,0 +1,28 @@
+.fitness__strength{
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.32px    ;
+    font-weight: 600;
+    color: rgb(244, 90, 42);
+    /* background-color: aqua; */
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.aligned__self--start{
+    align-self: flex-start;
+}
+
+.gap--10px{
+    gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .card2{
+        flex-direction: column-reverse;
+    }
+
+    .fitness__strength{
+        margin-bottom: 10px;
+    }
+}

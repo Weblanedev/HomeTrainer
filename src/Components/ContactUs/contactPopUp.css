@@ -1,0 +1,80 @@
+.deletealert {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  z-index: 7;
+}
+.deleteoption {
+  width: 60%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding-inline: 7px;
+  /* background-color: purple; */
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.new__feature--text {
+  color: #272525;
+  text-align: center;
+  font-size: 18px;
+}
+
+.undel {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  /* background-color: pink; */
+}
+.undo {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.deletediv {
+  width: 70%;
+  height: 50%;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+.deletediv button {
+  /* width: 20%;
+  height: 40%; */
+  padding: 11px 22px;
+  border-radius: 5px;
+  border: #2f74c0;
+  cursor: pointer;
+  background-color: #2f74c0;
+  color: white;
+}
+.deletediv button:hover {
+  background-color: #388ae2;
+}
+.deletediv button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px #000;
+}
+
+@media screen and (max-width: 700px) {
+  .deleteoption {
+    width: 95%;
+    height: 25%;
+  }
+}

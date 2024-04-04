@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-size: poppins;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
