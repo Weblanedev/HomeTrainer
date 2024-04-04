@@ -1,10 +1,11 @@
 import React from "react";
 import "./Blog.css";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
-// import Header from "../HomePage/Header/Header";
-// import Footer from "../HomePage/Footer/Footer";
+import Card from "../HomePage/Card/Card";
+import CardTwo from "../HomePage/SecondCard/CardTwo";
 
 const Blog = () => {
+  
   return (
     <>
       {/* <Header /> */}
@@ -134,6 +135,8 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      <Card />
+    <CardTwo />
       {/* <Footer /> */}
     </>
   );

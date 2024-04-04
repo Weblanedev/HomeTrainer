@@ -9,32 +9,44 @@ const Header = () => {
   const { pathname } = useLocation();
   const [menuPop, setMenuPop] = useState(false);
   const [activeNavItem, setActiveNavItem] = useState("home");
-  // console.log(activeNavItem);
-  // console.log(pathname);
+  console.log(activeNavItem);
+  console.log(pathname);
+  const currentRoute = pathname.substring(1)
+  console.log(currentRoute);
 
-const newPath = localStorage.getItem("navItem")
+// const newPath = localStorage.getItem("navItem")
+//   useLayoutEffect(() => { 
+//     if ( newPath ){
+//       setActiveNavItem(newPath)
+//     }
+//   }, [activeNavItem])
   useLayoutEffect(() => { 
-    if ( newPath){
-      setActiveNavItem(newPath)
+    if ( currentRoute ){
+      setActiveNavItem(currentRoute)
+    
     }
+
   }, [activeNavItem])
+
+  console.log(activeNavItem);
 
   const handleNavClick = (navItem) => {
     localStorage.removeItem("navItem")
-    setActiveNavItem(navItem);
-    if (navItem === "home") {
+    // setActiveNavItem(navItem);
+    if (navItem === "/") {
+      setActiveNavItem(navItem);
       nav("/");
-    } else if (navItem === "about") {
-      // setActiveNavItem(navItem);
+    } else if (navItem === "aboutUs") {
+      setActiveNavItem(navItem);
       nav("/aboutUs");
-    } else if (navItem === "contact") {
-      // setActiveNavItem(navItem);
+    } else if (navItem === "contactUs") {
+      setActiveNavItem(navItem);
       nav("/contactUs");
     } else if (navItem === "blog") {
-      // setActiveNavItem(navItem);
+      setActiveNavItem(navItem);
       nav("/blog");
     } else if (navItem === "checkout") {
-      // setActiveNavItem(navItem);
+      setActiveNavItem(navItem);
       nav("/checkout");
     }
   };
@@ -64,15 +76,15 @@ const newPath = localStorage.getItem("navItem")
         <div className="mainHeaderWrapper">
           <div
             className="Mainheaderlogo"
-            onClick={() => handleNavClick("home")}
+            onClick={() => handleNavClick("/")}
           >
             <h3 className="header__h3">HomeTrainer</h3>
             {/* <img src="./icons/docmate1232.png" className="Mainheaderlogoimag" /> */}
           </div>
           <div className="headerhome">
             <nav
-              className={activeNavItem === "home" ? "active" : "nav"}
-              onClick={() => handleNavClick("home")}
+              className={activeNavItem === "/" ? "active" : "nav"}
+              onClick={() => handleNavClick("/")}
             >
               Home
             </nav>
@@ -82,11 +94,11 @@ const newPath = localStorage.getItem("navItem")
               smooth={true}
               offset={50}
               duration={500}
-              onClick={() => handleNavClick("about")}
+              onClick={() => handleNavClick("aboutUs")}
             >
               <nav 
               // href="/about"
-                className={activeNavItem === "about" ? "active" : "nav"}
+                className={activeNavItem === "aboutUs" ? "active" : "nav"}
                 // onClick={() => handleNavClick("about")}
               >
                 About Us
@@ -99,8 +111,8 @@ const newPath = localStorage.getItem("navItem")
               Blog
             </nav>
             <nav
-              className={activeNavItem === "contact" ? "active" : "nav"}
-              onClick={() => handleNavClick("contact")}
+              className={activeNavItem === "contactUs" ? "active" : "nav"}
+              onClick={() => handleNavClick("contactUs")}
             >
               Contact Us
             </nav>

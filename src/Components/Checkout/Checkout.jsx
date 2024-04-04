@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Checkout.css";
 import { Link } from "react-router-dom";
 import { COUNTRIES_AND_STATES } from "../../country-states";
@@ -26,6 +26,7 @@ const Checkout = () => {
     amount: "",
     expire_date: "",
   });
+
 
   const gymOptions = {
     'Regular': '25,000',
