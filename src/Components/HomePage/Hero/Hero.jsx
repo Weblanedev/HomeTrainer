@@ -1,7 +1,12 @@
 import React from "react";
 import "./Hero.css";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const nav = useNavigate();
+  const hanleNav = ()=>{
+    nav("/checkout")
+  }
   return (
     <div className="HeroPage">
       <div className="HeroPageWrapper">
@@ -16,7 +21,7 @@ const Hero = () => {
             <h1>Transform Your Body, Elevate Your Mind</h1>
           </div>
           <div className="btndiv">
-            <button className="started">Get Started </button>
+            <button className="started" onClick={hanleNav}>Get Started </button>
           </div>
         </div>
         {/* 

@@ -63,9 +63,9 @@ const Checkout = () => {
     setSelectedState("");
   };
 
-  const handleStateChange = (e) => {
-    setSelectedState(e.target.value);
-  };
+  // const handleStateChange = (e) => {
+  //   setSelectedState(e.target.value);
+  // };
 
   const showInvoice = useModals(["showInvoice"]);
 
