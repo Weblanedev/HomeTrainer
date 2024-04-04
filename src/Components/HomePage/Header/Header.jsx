@@ -106,7 +106,7 @@ const newPath = localStorage.getItem("navItem")
             </nav>
           </div>
           <div className="registerbody">
-            <button className="headlogin" onClick={()=>handleNavClick("checkout")}>Try Now</button>
+            <button className="headlogin" onClick={()=>handleNavClick("checkout")}>Join Now</button>
           </div>
           <div
             className="landingPageBurgerMenu"

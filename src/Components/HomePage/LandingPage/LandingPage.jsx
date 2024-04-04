@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../Hero/Hero'
 import Card from '../Card/Card'
 import ScrollToTopOnMount from '../../ScrollToTopOnMount/ScrollToTopOnMount'
-import Card2 from '../SecondCard/Card2'
+import CardTwo from '../SecondCard/CardTwo'
 
 const LandingPage = () => {
   return (
@@ -10,7 +10,7 @@ const LandingPage = () => {
     <ScrollToTopOnMount />
     <Hero />
     <Card />
-    <Card2 />
+    <CardTwo />
     </>
   )
 }

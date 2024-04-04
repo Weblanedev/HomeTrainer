@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card2.css"
 
-const Card2 = () => {
+const CardTwo = () => {
   return (
     <div className="card__container card2">
       <div className="card__container--right gap--10px">
@@ -19,10 +19,6 @@ const Card2 = () => {
           flexibility or tap into your spirituality. Whatever benefits you’re
           hoping for, chances are there’s a yoga style for you.
         </p>
-        {/* <p className="small__content">
-          If you’ve been feeling extra sluggish or want to steady the highs and
-          lows that hit you throughout the day, try these energy-boosting tips.
-        </p> */}
       </div>
       <div className="card__container--left">
         <img
@@ -34,4 +30,4 @@ const Card2 = () => {
   );
 };
 
-export default Card2;
+export default CardTwo;
