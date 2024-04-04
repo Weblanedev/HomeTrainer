@@ -16,7 +16,6 @@ const Checkout = () => {
     phoneNumber: "",
     email: "",
     message: "",
-    message1: "",
     cvc: "",
     card_number: "",
     city: "",
@@ -35,7 +34,6 @@ const Checkout = () => {
     formData.phoneNumber &&
     formData.email && 
     formData.message &&
-    formData.message1 &&
     formData.cvc &&
     formData.card_number &&
     formData.city &&
