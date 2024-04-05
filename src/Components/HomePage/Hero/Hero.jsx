@@ -21,7 +21,7 @@ const Hero = () => {
             <h1>Transform Your Body, Elevate Your Mind</h1>
           </div>
           <div className="btndiv">
-            <button className="started" onClick={hanleNav}>Get Started </button>
+            <button className="started">Join Now</button>
           </div>
         </div>
         {/* 
